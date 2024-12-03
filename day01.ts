@@ -1,6 +1,6 @@
 import {readData} from './utils'
 
-function part1(): number {
+export function part1(): number {
   const {l: leftCol, r: rightCol} = readData(1).reduce((acc, line) => {
     const [, left, right] = line.match(/(\d+)\s+(\d+)/) ?? []
     acc.l.push(Number.parseInt(left))
@@ -20,7 +20,7 @@ function part1(): number {
   return sum
 }
 
-function part2(): number {
+export function part2(): number {
   const {location_ids, occurrences} = readData(1).reduce((acc, line) => {
     const [, left, right] = line.match(/(\d+)\s+(\d+)/) ?? []
     acc.location_ids.push(Number.parseInt(left))
@@ -41,6 +41,3 @@ function part2(): number {
   }
   return sum
 }
-
-console.log(`part1: ${part1()}`)
-console.log(`part2: ${part2()}`)

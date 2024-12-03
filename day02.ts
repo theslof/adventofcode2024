@@ -1,6 +1,6 @@
 import {readData} from './utils'
 
-function part1(): number {
+export function part1(): number {
   let safe = 0
   readData(2).forEach(line => {
     const levels = line.split(' ').map(level => Number.parseInt(level))
@@ -20,7 +20,7 @@ function part1(): number {
   return safe
 }
 
-function part2(): number {
+export function part2(): number {
   let safe = 0
   readData(2).forEach(line => {
     const levels = line.split(' ').map(level => Number.parseInt(level))
@@ -50,6 +50,3 @@ function part2(): number {
 
   return safe
 }
-
-console.log(`part1: ${part1()}`)
-console.log(`part2: ${part2()}`)
