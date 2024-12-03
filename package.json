@@ -4,6 +4,10 @@
   "description": "Advent of Code 2024",
   "author": "Jonas Theslöf <theslof@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "tsx run.ts",
+    "stats": "tsx run.ts --stats"
+  },
   "devDependencies": {
     "@types/node": "^22.10.1",
     "tsx": "^4.19.2"
