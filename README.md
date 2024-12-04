@@ -1,11 +1,8 @@
 My solutions to the 2024 edition of [Advent of Code](https://adventofcode.com/2022)
 
-```
-npm i
-npm run start 1
-npm run stats 2
-etc.
-```
+`npm install`
+
+Add your puzzle input to files using the name `day01.data` etc.
 
 `npm run start <day>` outputs the solutions.
 
